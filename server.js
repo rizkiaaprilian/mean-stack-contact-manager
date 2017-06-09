@@ -20,8 +20,8 @@ app.set('env', ENV);
 
 require('./config/mongoose').init(app);
 require('./config/models').init(app);
-//require('./config/passport').init(app);
-//require('./config/express').init(app);
+require('./config/passport').init(app);
+require('./config/express').init(app);
 require('./config/routes').init(app);
 
 //start the app if not loaded by another module
